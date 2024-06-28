@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        
+        }
+        ul{
+            display: flex;
+            justify-content: end;
+            background-color: #121212;
+            color: whitesmoke;
+            padding: 16px;
+            font-size: 24px;
+            list-style: none;
+            z-index: -2;
+        }
+        a{
+            color: inherit;
+            text-decoration: none;
+            z-index: 10;
+            mix-blend-mode: difference;
+        }
+        li{
+            z-index: 1;
+            position: relative;
+            padding: 16px 24px;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            --__translate-x: 0%;
+            --__opacity: 0;
+
+        }
+        li:hover{
+            --__translate-x: 0%;
+            --__translate-x-delay: 0s;
+            --__translate-x-duration: 1s;
+            --__opacity: 1;
+            --__opacity-delay: 0s;
+            --__opacity-duration : 1s;
+
+        }
+        li:hover + li{
+            --__translate-x: -100%;
+            --__translate-x-delay: 0s;
+            --__translate-x-duration: 1s;
+            --__opacity: 1;
+            --__opacity-delay: 1s;
+            --__opacity-duration : 0s;
+
+        }
+
+        li:has( + li:hover){
+            --__translate-x: 100%;
+            --__translate-x-delay: 0s;
+            --__translate-x-duration: 1s;
+            --__opacity: 1;
+            --__opacity-delay: 1s;
+            --__opacity-duration : 0s;
+
+        }
+
+        li:before{
+            z-index: -1;
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 3px;
+            background-color: white;
+            bottom: 0px;
+            left: 0px;
+            opacity: var(--__opacity);
+            transform: translatex(var(--__translate-x));
+            transition-duration: var(--__opacity-duration), var(--__translate-x-duration);
+            transition-property: opacity , transform;
+            transition-delay: var(--__opacity-delay), var(--__translate-x-delay);
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="link-item"> <a href="#">Home</a></li>
+        <li class="link-item"> <a href="#">About</a></li>
+        <li class="link-item"> <a href="#">Market-place</a></li>
+        <li class="link-item"> <a href="#">Contact</a></li>
+        <li class="link-item"> <a href="#">Menu</a></li>
+    </ul>
+</body>
+</html>

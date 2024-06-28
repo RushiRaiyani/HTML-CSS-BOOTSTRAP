@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Rotation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+
+        .circle1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 700px;
+            width: 700px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(10, 182, 107);
+            animation: ani 8s linear infinite;
+        }
+
+        .circle2 {
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(221, 217, 9);
+            animation: ani 7s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cir3 {
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(8, 180, 223);
+            animation: ani 6s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cir4 {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(43, 239, 13);
+            animation: ani 5s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cir5 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(235, 112, 12);
+            animation: ani 4s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cir6 {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 5px solid rgb(32, 29, 29);
+            border-top: 5px solid rgb(204, 16, 63);
+            animation: ani 3s linear infinite;
+        }
+
+        @keyframes ani {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle1">
+            <div class="circle2">
+                <div class="cir3">
+                    <div class="cir4">
+                        <div class="cir5">
+                            <div class="cir6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .headerMain {
+            height: 100px;
+            background-color: rgb(52, 50, 50);
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .menu {
+            width: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        .bodyMain {
+            height: 900px;
+            background-color: rgb(207, 205, 205);
+        }
+
+        .bodyHeading {
+            height: 90px;
+            display: flex;
+            font-size: large;
+            letter-spacing: 3px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mainPart {
+            height: 750px;
+            margin: 0px 10px 0px 50px;
+            display: flex;
+        }
+
+        .book {
+            height: 753px;
+            width: 600px;
+            border-radius: 15px;
+            border: 1.5px solid black;
+        }
+
+        .intro {
+            height: 200px;
+            background-color: rgba(168, 166, 166, 0.444);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bookHeading {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            font-size: 70px;
+            text-align: right;
+            padding: 10px 20px 0px;
+            font-weight: 400;
+            background-color: white;
+        }
+
+        .bookLogo {
+            height: 350px;
+        }
+
+        .trademark {
+            width: 300px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .thought {
+            padding: 10px;
+            width: 700px;
+            font-size: medium;
+            text-align: right;
+        }
+
+        .thought p {
+            margin-bottom: 10px;
+        }
+
+        .thought h2 {
+            font-size: xx-large;
+            margin-top: 20px;
+        }
+
+        .trademark h2 {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            width: 120px;
+        }
+
+        .big {
+            font-size: 300px;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .bookLogo {
+            background-color: rgb(240, 212, 54);
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .inside {
+            position: relative;
+            rotate: 270deg;
+            left: 50px;
+            bottom: 40px;
+            font-size: 20px;
+            color: rgb(240, 212, 54)
+        }
+
+        .bookInfo {
+            width: 950px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: x-large;
+            font-weight: 400;
+            flex-direction: column;
+        }
+
+        .bookInfo p {
+            margin: 50px;
+        }
+
+        .bookInfo button {
+            width: 300px;
+            height: 50px;
+            background-color: rgb(255, 153, 0);
+            color: white;
+            border: none;
+            font-size: large;
+            font-weight: 600;
+            border-radius: 15px;
+        }
+
+        .footer {
+            height: 150px;
+            background-color: rgb(23, 23, 32);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer p {
+            color: white;
+            margin-bottom: 10px;
+            font-size: large;
+        }
+
+        .footer button {
+            width: 500px;
+            height: 30px;
+            background-color: rgb(255, 153, 0);
+            border: none;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerMain">
+        <div class="menu">
+            <a href="#">The book series</a>
+            <a href="#">Testimonials</a>
+            <a href="#">The Author</a>
+            <a href="#">Free Resources</a>
+        </div>
+    </div>
+    <div class="bodyMain">
+        <div class="bodyHeading">
+            <h3>You dont know JavaScript</h3>
+        </div>
+        <div class="mainPart">
+            <div class="book">
+                <div class="intro">
+                    <div class="trademark">
+                        <h2>O'REILLY</h2>
+                    </div>
+                    <div class="thought">
+                        <p>"When you strive to comprehend your code,you create better work and become
+                            better at what you do.The code isn't just your job anymore.it's your craft.This is why i
+                            love-Up&going. <br>Rushi Raiyani-fronthand consultant"</p>
+                        <h2>-Rushi Raiyani</h2>
+                    </div>
+
+                </div>
+                <div class="bookHeading">
+                    <p>COMPLETE</p>
+                    <p>SERIES</p>
+                </div>
+                <div class="bookLogo">
+                    <p class="inside">YOU DON'T KNOW</p>
+                    <p class="big">JS</p>
+
+                </div>
+            </div>
+            <div class="bookInfo">
+                <p>Don't just drift through Javascript</p>
+                <p>Understand how JavaScript works</p>
+                <p>Start your journey through the bumpy side of JavaScript</p>
+                <button>Order Your Copy Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <P>The first ebook in the series is absoulutely free</P>
+        <button>FIND OUT MORE ABOUT THIS OFFER</button>
+    </div>
+</body>
+
+</html>

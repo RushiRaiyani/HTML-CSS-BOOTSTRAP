@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 600px;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        a {
+            font-size: xx-large;
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        .trial1::first-line {
+            color: rgb(0, 170, 255);
+            font-size: xx-large;
+        }
+
+        .trial2::first-letter {
+            color: purple;
+            font-size: xx-large;
+        }
+
+        button {
+            margin: 20px;
+            background-color: aquamarine;
+            height: 50px;
+            width: 100px;
+        }
+
+        button:hover {
+            background-color: rgb(0, 255, 136);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a target="_blank" href="###">Click Me</a>
+        <p class="trial1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dicta quia labore suscipit,
+            quasi excepturi pariatur, quae quidem dolor dolores nisi tempora fuga sapiente recusandae ipsum obcaecati?
+            Sapiente, placeat quidem!</p>
+        <p class="trial2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum veniam accusantium, rerum
+            modi incidunt deserunt officiis praesentium, numquam perferendis architecto maiores suscipit error vel optio
+            accusamus doloribus nobis soluta quidem.</p>
+        <button>
+            Submit Me
+        </button>
+    </div>
+</body>
+
+</html>

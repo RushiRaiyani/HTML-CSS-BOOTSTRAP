@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: auto;
+}
+.main{
+    width:100vw;
+    height:100vh;
+}
+.header{
+    display: flex;
+    /* height:100px; */
+    height:10%;
+    margin:10px;
+}
+.img{
+    height:90px;
+    width:100px;
+    /* padding-right: 1000px; */
+}
+
+.title{
+    padding-left: 1000px;
+    padding-top: 20px;
+    display: flex;
+}
+.links{
+    text-decoration: none;
+    padding:10px;
+    font-size: 40px;
+}
+.body{
+    display: flex;
+    margin-top: 10px;
+    /* width:20vw; */
+    height:70%;
+    width:100%;
+
+
+}
+.sidebar{
+    /* min-width:300px;
+    min-height:400px;
+    max-width:300px;
+    max-height:400px; */ 
+    /* min-width: 100%; */
+    /* width:300px; */
+    width:20%;
+    background-color: red;
+}
+.SidebarMenu{
+    border:1px solid yellow;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.space{
+    background-color: red;
+    height:10px;
+}
+.content{
+    /* width:80%; */
+    display: flex;
+    float:right;
+    border:2px dashed rgb(160, 45, 64);
+    width:80%;
+}
+.part1{
+    display: flex;
+}
+.contentImg{
+display: inline-block;
+height:100px;
+width:140px;
+margin:10px;
+clear:right;
+}
+.contentImg1{
+    display: inline-block;
+    height:100px;
+    width:140px;
+    margin:10px;
+}
+.content2{
+    display: flex;
+    position: relative;
+    top:200px;
+    right:320px;
+}
+.text{
+    padding:0px 10px;
+}

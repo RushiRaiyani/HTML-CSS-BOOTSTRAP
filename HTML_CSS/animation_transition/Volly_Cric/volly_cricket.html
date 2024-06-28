@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VollCric</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 90vh;
+            width: 90vw;
+            position: relative;
+        }
+
+        .container {
+            height: 5%;
+            width: 2.5%;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            animation: ani 5s infinite 1s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            top: 50%;
+            left: 10%;
+        }
+
+        .container img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: none;
+        }
+
+        @keyframes ani {
+            0% {
+                top: 50%;
+                left: 10%;
+            }
+
+            2% {
+                top: 47%;
+                left: 11.6%;
+            }
+
+            4% {
+                top: 44%;
+                left: 13.2%;
+            }
+
+            6% {
+                top: 41%;
+                left: 14.8%;
+            }
+
+            8% {
+                top: 38%;
+                left: 16.4%;
+            }
+
+            10% {
+                top: 35%;
+                left: 18.0%;
+            }
+
+            12% {
+                top: 32%;
+                left: 19.6%;
+            }
+
+            14% {
+                top: 29%;
+                left: 21.2%;
+            }
+
+            16% {
+                top: 26%;
+                left: 22.8%;
+            }
+
+            18% {
+                top: 30%;
+                left: 24.4%;
+            }
+
+            20% {
+                top: 33%;
+                left: 26.0%;
+            }
+
+            22% {
+                top: 35%;
+                left: 27.6%;
+            }
+
+            24% {
+                top: 38%;
+                left: 29.2%;
+            }
+
+            26% {
+                top: 39%;
+                left: 30.8%;
+            }
+
+            28% {
+                top: 42%;
+                left: 32.4%;
+            }
+
+            30% {
+                top: 45%;
+                left: 34.0%;
+
+            }
+
+            32% {
+                top: 48%;
+                left: 35.6%;
+            }
+
+            34% {
+                top: 51%;
+                left: 37.2%;
+            }
+
+            36% {
+                top: 54%;
+                left: 38.8%;
+            }
+
+            38% {
+                top: 57%;
+                left: 40.4%;
+            }
+
+            40% {
+                top: 60%;
+                left: 42.0%;
+            }
+
+            42% {
+                top: 63%;
+                left: 43.6%;
+            }
+
+            44% {
+                top: 66%;
+                left: 45.2%;
+            }
+
+            46% {
+                top: 69%;
+                left: 46.8%;
+            }
+
+            48% {
+                top: 72%;
+                left: 48.4%;
+            }
+
+            50% {
+                top: 75%;
+                left: 50%;
+            }
+
+            52% {
+                top: 72%;
+                left: 51.6%;
+            }
+
+            54% {
+                top: 69%;
+                left: 53.2%;
+            }
+
+            56% {
+                top: 66%;
+                left: 54.8%;
+            }
+
+            58% {
+                top: 63%;
+                left: 56.4%;
+            }
+
+            60% {
+                top: 60%;
+                left: 58.0%;
+            }
+
+            62% {
+                top: 57%;
+                left: 59.6%;
+            }
+
+            64% {
+                top: 54%;
+                left: 61.2%;
+            }
+
+            66% {
+                top: 51%;
+                left: 62.8%;
+            }
+
+            68% {
+                top: 48%;
+                left: 64.4%;
+            }
+
+            70% {
+                top: 45%;
+                left: 66.0%;
+            }
+
+            72% {
+                top: 42%;
+                left: 67.6%;
+            }
+
+            74% {
+                top: 39%;
+                left: 69.2%;
+            }
+
+            76% {
+                top: 36%;
+                left: 70.8%;
+            }
+
+            78% {
+                top: 33%;
+                left: 72.4%;
+            }
+
+            80% {
+                top: 30%;
+                left: 74.0%;
+            }
+
+            82% {
+                top: 27%;
+                left: 75.6%;
+            }
+
+            84% {
+                top: 24%;
+                left: 77.2%;
+            }
+
+            86% {
+                top: 27%;
+                left: 78.8%;
+            }
+
+            88% {
+                top: 30%;
+                left: 80.4%;
+            }
+
+            90% {
+                top: 33%;
+                left: 82.0%;
+            }
+
+            92% {
+                top: 36%;
+                left: 83.6%;
+            }
+
+            94% {
+                top: 39%;
+                left: 85.2%;
+            }
+
+            96% {
+                top: 42%;
+                left: 86.8%;
+            }
+
+            98% {
+                top: 45%;
+                left: 88.4%;
+            }
+
+            100% {
+                top: 48%;
+                left: 90.0%;
+            }
+
+        }
+
+        .tennis1 {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 48%;
+            left: 5%;
+            animation: ani2 1 1s linear;
+
+        }
+
+        .tennis2 {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 48%;
+            left: 88%;
+            z-index: -1;
+            animation: ani2 1s 1 5.8s linear;
+
+        }
+
+        .tennis1 img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .tennis2 img {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tennis1"><img src="volly.jpg"></div>
+    <div class="container"><img src="download.jpeg"></div>
+    <div class="tennis2"><img src="volly2.jpg"></div>
+</body>
+
+</html>

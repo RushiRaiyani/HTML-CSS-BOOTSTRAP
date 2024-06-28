@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outerBorder {
+            border: 20px solid rgb(2, 96, 104);
+            background-color: rgb(2, 96, 104);
+        }
+
+        .innerBorder {
+            border: 1px solid rgb(2, 96, 104);
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .mainHeading {
+            border-right: 0.5px solid rgb(2, 96, 104);
+            border-left: 0.5px solid rgb(2, 96, 104);
+            border-top: 0.5px solid rgb(2, 96, 104);
+            border-bottom: 0.3px solid rgb(108, 105, 105);
+            background-color: rgba(110, 105, 105, 0.221);
+            text-align: center;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            color: rgb(70, 72, 72);
+        }
+
+        .parts {
+            color: rgb(24, 172, 132);
+        }
+
+        body {
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+
+        .footer {
+            border-right: 0.5px solid rgb(2, 96, 104);
+            border-left: 0.5px solid rgb(2, 96, 104);
+            border-top: 0.5px solid rgb(2, 96, 104);
+            border-bottom: 0.3px solid rgb(108, 105, 105);
+            background-color: rgba(110, 105, 105, 0.221);
+            text-align: center;
+            border-bottom-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            color: rgb(70, 72, 72);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outerBorder">
+        <div class="innerBorder">
+            <div class="mainHeading">
+                <h1>Create Account</h1>
+            </div>
+            <form>
+                <table align="center">
+                    <tr class="parts">
+                        <td>First name*<br><input type="text" placeholder="enter your first name" required></td>
+                        <td>Last name<br><input type="text" placeholder="enter your last name"></td>
+
+                    </tr>
+                    <tr class="parts">
+                        <td colspan="2">Email*<br><input type="email" placeholder="enter your email" required></td>
+                    </tr>
+                    <tr class="parts">
+                        <td>Password*<br><input type="password" required placeholder="enter your password"></td>
+                        <td>Confirm Password*<br><input type="password" placeholder="enter your password again"
+                                required></td>
+                    </tr>
+                    <tr class="parts">
+                        <td>Gender:<br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="gender">Male <input type="radio" name="gender">Female</td>
+                        <td>Hobbies<br><input type="checkbox">Music <input type="checkbox">Sports <input
+                                type="checkbox">Travel <input type="checkbox">Movies</td>
+                    </tr>
+                    <tr class="parts">
+                        <td>Source Of Income<br><select>
+                                <option>Employed</option>
+                                <option>Job</option>
+                                <option>Business</option>
+                            </select></td>
+                        <td>Income<br><input type="range" min="0" max="20"><input type="button" value="20k"></td>
+                    </tr>
+                    <tr class="parts">
+                        <td>Upload Profile Picture<br><input type="file"></td>
+                        <td>Age<br><input type="number" value="18" pattern="[0-9]{3}"></td>
+                    </tr>
+                    <tr class="parts">
+                        <td>Bio<br><textarea name="myText" cols="30" rows="10"></textarea></td>
+                    </tr>
+
+
+                    <tr class="mainHeading">
+                        <td colspan="2" align="center">
+                            <input type="button" value="Create">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

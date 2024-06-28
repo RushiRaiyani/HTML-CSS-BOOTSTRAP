@@ -1,0 +1,90 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            padding: 10px;
+        }
+
+        .header {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+
+            img {
+                height: 100%;
+                width: 300px;
+                display: flex;
+            }
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                padding: 10px;
+                font-size: x-large;
+                text-decoration: none;
+            }
+        }
+
+        .body {
+            width: 100%;
+            height: 600px;
+            background-image: url('./web.webp');
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+
+            h2 {
+                color: aliceblue;
+                padding-top: 100px;
+                padding-left: 950px;
+            }
+
+            p {
+                color: aliceblue;
+                padding-top: 60px;
+                padding-left: 950px;
+                font-size: large;
+            }
+        }
+
+        /* @media(max-width:1100px) { 
+            .body {
+                height: auto;
+                background-size: 100% 500px;
+            }
+        } */
+        .bottomBody {
+            display: flex;
+            height: 200px;
+            width: 100%;
+            justify-content: center;
+
+            div {
+                text-align: center;
+                border: 2px solid red;
+                margin: 15px;
+                height: 170px;
+                width: 350px;
+            }
+        }
+
+        /* @media(max-width:900px) {
+            .bottomBody {
+                flex-wrap: wrap;
+                height: auto;
+                justify-content: flex-start;
+            }
+
+            .bottomBody div {
+                margin: 10px;
+                height: 120px;
+                width: calc(25% - 20px);
+            }
+        } */

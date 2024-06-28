@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div tag and CSS</title>
+    <!-- <link rel="stylesheet" href="./one.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 600px;
+            width: 100%;
+            padding: 3%;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            padding: 2%;
+            background-color: aqua;
+        }
+
+        .heading {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(198, 12, 12);
+        }
+
+        .body {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(255, 166, 0);
+        }
+
+        .footer {
+            height: 10%;
+            width: 100%;
+        }
+
+        .part1 {
+            height: 60%;
+            width: 50%;
+            display: inline-block;
+        }
+
+        .part2 {
+            height: 70%;
+            width: 40%;
+            float: right;
+        }
+
+        @media(max-width:700px) {
+            .part1 {
+                height: 40%;
+                width: 100%;
+            }
+
+            .part2 {
+                height: 50%;
+                width: 100%;
+                float: left;
+            }
+
+            .body {
+                padding: 10px;
+            }
+        }
+
+        .entry {
+            height: 15%;
+            width: 100%;
+            background-color: black;
+            color: white;
+            margin-top: 3%;
+        }
+
+        .side {
+            width: 100%;
+            height: 45%;
+            margin-top: 3%;
+            background-color: black;
+            color: white;
+        }
+
+        .footer {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Header</h3>
+        </div>
+        <div class="body">
+            <p>Content</p>
+            <div class="part1">
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+                <div class="entry">Entry</div>
+            </div>
+            <div class="part2">
+                <div class="side">Sidebar</div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-style: sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 1707px;
+
+        }
+
+        .header {
+            height: 10%;
+            width: 100%;
+            display: flex;
+            background-color: black;
+        }
+
+        .logo {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: 15%;
+        }
+
+        .logo p {
+            font-size: xx-large;
+            font-weight: 700;
+            color: white;
+        }
+
+        .menu {
+            height: 100%;
+            width: 55%;
+            display: flex;
+            align-items: center;
+        }
+
+        .select1 {
+            height: 50%;
+            width: 14%;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .select2 {
+            height: 50%;
+            width: 18%;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+
+        .menu button {
+            height: 50%;
+            width: 20%;
+            border-radius: 20px;
+            margin-left: 20px;
+            background-color: rgb(0, 183, 255);
+            border: none;
+            font-size: larger;
+            color: white;
+            font-weight: 600;
+        }
+
+        .container {
+            height: 90%;
+            width: 100%;
+            background-color: rgb(83, 80, 80);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .show {
+            height: 90%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .part1 {
+            height: 25%;
+            width: 100%;
+        }
+
+        .part2 {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .last {
+            height: 100%;
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            transition: all 1s;
+        }
+
+        .concept {
+            height: 55%;
+            width: 100%;
+        }
+
+        .about {
+            height: 45%;
+            width: 100%;
+        }
+
+        .textAbout {
+            font-size: large;
+            margin-top: 5px;
+        }
+
+        .about h3 {
+            font-size: xx-large;
+        }
+
+        .part1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .concept img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .insideSee button {
+            height: 50px;
+            width: 140px;
+            border: none;
+            background-color: rgb(0, 204, 255);
+            color: white;
+            border-radius: 30px;
+            margin-top: 3px;
+            align-items: center;
+            font-size: larger;
+        }
+
+        .insideSee {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .last:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 20px 5px rgba(37, 59, 130, 0.7);
+            background-color: rgb(190, 206, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img17.jpg">
+            <p>SoundAmp</p>
+        </div>
+        <div class="menu">
+            <select class="select1">
+                <option>HTML Templates</option>
+            </select>
+            <select class="select2">
+                <option>More HTML Templates</option>
+            </select>
+            <button>Download Now</button>
+            <div class="apps"><img src="img18.jpg"></div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="show">
+            <div class="part1">
+                <img class="back_logo" src="img16.jpg">
+            </div>
+            <div class="part2">
+                <div class="last">
+                    <div class="concept"><img src="img12.jpg"> </div>
+                    <div class="about">
+                        <p class="textAbout">10/3/2024</p>
+                        <h3>Night Laser Show</h3>
+                        <p class="textAbout">#hip-hop #mb #dance</p>
+                        <p class="textAbout">We are happy to announce this special laser show</p>
+                        <div class="insideSee">
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="concept"><img src="img13.jpg"></div>
+                    <div class="about">
+                        <p class="textAbout">10/3/2024</p>
+                        <h3>Live Music</h3>
+                        <p class="textAbout">#live #rock #altenate</p>
+                        <p class="textAbout">Special event for our rock fans! Live Music show</p>
+                        <div class="insideSee">
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="concept"><img src="img14.avif"></div>
+                    <div class="about">
+                        <p class="textAbout">10/3/2024</p>
+                        <h3>Dj master class</h3>
+                        <p class="textAbout">#Dj #master class</p>
+                        <p class="textAbout">Dj wood smell will teach you new tricks:please sign up</p>
+                        <div class="insideSee">
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="concept"><img src="img15.jpg"></div>
+                    <div class="about">
+                        <p class="textAbout">10/3/2024</p>
+                        <h3>Best night party</h3>
+                        <p class="textAbout">#party #club</p>
+                        <p class="textAbout">our traditional event:best hits all night long</p>
+                        <div class="insideSee">
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

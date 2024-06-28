@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 175vh;
+            width: 100vw;
+            background-image: url('b.avif');
+            background-size: 100vw 175vh;
+            background-repeat: no-repeat;
+            padding: 50px 50px 0px 50px;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .upper {
+            background-image: url('bg.jpg');
+            opacity: 0.9;
+            height: 50%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+        }
+
+        .header {
+            height: 100px;
+            width: 100%;
+            display: flex;
+        }
+
+        .logo img {
+            height: 97px;
+            display: inline-block;
+        }
+
+        .logo {
+            display: inline-block;
+            margin-left: 100px;
+            border: 2px solid red;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 300px;
+        }
+
+        .menu a {
+            margin: 10px;
+            color: black;
+            font-size: x-large;
+            text-decoration: none;
+            width: 90px;
+
+        }
+
+        .input {
+            height: 55px;
+            width: 270px;
+            display: flex;
+            align-items: center;
+            margin: 20px 200px;
+            margin-left: 200px;
+        }
+
+        .input input {
+            width: 270px;
+            border: none;
+            height: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .input button {
+            height: 50px;
+            width: 100px;
+            border: none;
+            background-color: red;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        .menu a:hover {
+            color: red;
+        }
+
+        .info {
+            height: 300px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 100px;
+            margin-left: 100px;
+            padding-left: 20px;
+        }
+
+        .info h3 {
+            margin: 10px;
+            font-size: x-large;
+        }
+
+        .info h1 {
+            margin: 10px;
+        }
+
+        .info p {
+            margin: 10px;
+            font-size: x-large;
+        }
+
+        .info button {
+            height: 40px;
+            background-color: red;
+            width: 150px;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            margin: 20px;
+        }
+
+        .middle {
+            display: flex;
+            padding-left: 100px;
+            background-color: white;
+        }
+
+        .middle img {
+            height: 70px;
+            width: 150px;
+            margin: 40px;
+            opacity: 0.3;
+        }
+
+        .imgLogo {
+            height: 10px;
+            width: 1500px;
+        }
+
+        .bottom {
+            height: 550px;
+            width: 100%;
+            display: flex;
+            background-color: white;
+        }
+
+        .left {
+            height: 100%;
+            width: 25%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            width: 75%;
+            margin-top: 100px;
+        }
+
+        .self {
+            height: 100px;
+            width: 100%;
+            padding-left: 250px;
+            background-color: white;
+        }
+
+        .down {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 20px;
+            background-color: white;
+        }
+
+        .left h1 {
+            font-size: 100px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .left p {
+            font-size: 30px;
+            padding: 30px;
+            padding-left: 100px;
+        }
+
+        .self h3 {
+            font-size: 30px;
+            padding-right: 350px;
+        }
+
+        .selectLogo {
+            height: 250px;
+            width: 220px;
+            background-color: rgb(210, 233, 237);
+            display: flex;
+            margin: 10px;
+            flex-direction: column;
+            font-size: 30px;
+            transition: scale 350ms ease opacity 350ms linear;
+        }
+
+        .selectLogo:hover {
+            scale: 1.1;
+            color: white;
+            background-color: black;
+            transition: 0.7s;
+            box-shadow: 2px 2px 3px red;
+        }
+
+        .selectLogo img {
+            height: 80px;
+            width: 80px;
+            display: inline-block;
+            margin: 30px 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="upper">
+            <div class="header">
+                <div class="logo"><img src="logo.jpg"></div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">My Intro</a>
+                    <a href="#">Services</a>
+                    <a href="#">pages</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="input"><input type="search" placeholder="Enter Keyword...">
+                    <button>search</button>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Hi I'm Mary Ateer</h3>
+                <h1>DESIGNER</h1>
+                <p>I love to Work in UI/UX designing. I always try my best to make </p>
+                <button>Hire Me</button>
+            </div>
+
+        </div>
+        <div class="middle">
+            <img src="paypal.png">
+            <img src="google.png">
+            <img src="samsung.png">
+            <img src="lenovo.png">
+            <img class="imgLogo" src="amazon.png">
+        </div>
+        <div class="bottom">
+            <div class="left">
+                <h1>22</h1>
+                <p>years of Experience working</p>
+            </div>
+            <div class="right">
+                <div class="self">
+                    <h3>I'm a designer & developer with a passion for Web Design</h3>
+
+                </div>
+                <div class="down">
+                    <div class="selectLogo"><img src="1.jpeg">
+                        <p>Creative Design</p>
+                    </div>
+                    <div class="selectLogo"><img src="2.png">
+                        <p>Web Design</p>
+                    </div>
+                    <div class="selectLogo"><img src="3.png">
+                        <p>Brand Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

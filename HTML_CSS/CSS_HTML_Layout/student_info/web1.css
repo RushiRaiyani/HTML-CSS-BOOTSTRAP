@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    background-color: rgb(217, 192, 192);
+    padding:10px;
+    overflow: hidden;
+}
+body{
+    overflow-x: auto;
+}
+.header{
+    background-color: rgb(36, 195, 36);
+    overflow: hidden;
+}
+.logo{
+    float:left;
+    padding:8px 20px 4px 20px;
+    margin: 10px;
+}
+.imgLogo{
+    width:30px;
+}
+.menu{
+    background-color: rgb(13, 166, 177);
+    float:right;
+    margin:10px;
+    padding:10px 20px 10px 20px;
+}
+.list1{
+    list-style:none;
+    padding:0px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.sidebar{
+    background-color: red;
+    float:left;
+    margin:10px;
+    padding:10px 50px 10px 10px;
+    height:300px;
+
+}
+.body{
+    background-color: rgb(121, 117, 117);
+    overflow: hidden;
+}
+.img{
+    width:150px;
+    height:70px;
+    margin:10px;
+    padding-left:30px;
+    
+    
+}
+.content{
+    background-color: yellow;
+    overflow: hidden;
+    margin:10px;
+    height:300px;
+}
+.info{
+    background-color: skyblue;
+    float:left;
+    width:30%;
+    margin:10px;
+    align-items: center;
+    height:210px;
+}
+.footer{
+    background-color: rgb(64, 58, 58);
+    height:30px;
+}

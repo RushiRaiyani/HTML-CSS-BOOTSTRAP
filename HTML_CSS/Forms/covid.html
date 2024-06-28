@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Vaccine Form</title>
+</head>
+<body>
+    <fieldset>
+        <h1 align="center">COVID-19 Vaccine Registration Form</h1>
+        <form>
+            <table align="center" cellspacing=20px>
+                <tr>
+                    <td>First Name</td>
+                    <td ><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td ><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Aadhar Number</td>
+                    <td><input type="text" pattern="[0-9]{12}"></td>
+                </tr>
+                <tr>
+                    <td>Vaccine Name</td>
+                    <td><select>
+                        <option>please Select Vaccine Name</option>
+                        <option>covaxine</option>
+                        <option>covishield</option>
+                        <option>sputnik</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Vaccination Center Name</td>
+                    <td>
+                        <select>
+                            <option>Please Select Vaccinantion Center Name</option>
+                            <option>abc</option>
+                            <option>def</option>
+                            <option>xyz</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Dose</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Dose Number</td>
+                    <td><input type="text" pattern=[0-3]{1} size="4"></td>
+                </tr>
+                
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="click here"> <input type="reset" value=Cancel></td>
+    
+                   </tr>
+    
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

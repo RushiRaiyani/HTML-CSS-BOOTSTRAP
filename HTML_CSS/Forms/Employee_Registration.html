@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+</head>
+
+<body>
+    <fieldset align="center">
+        <h1 align="center">Employee Registrtion</h1>
+
+        <table align="center" cellpadding="5px">
+            <tr>
+                <th colspan="6" align="center">Personal Information</th>
+            </tr>
+            <tr>
+                <td>Employee Id</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Employee Id"></td>
+                <td>Employee Name</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Employee Name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="email" placeholder="Enter Email"></td>
+                <td>Contact No</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Contact No" pattern="[0-9]{10}" title="plz enter" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Marital Status</td>
+                <td>:</td>
+                <td>Single<input type="radio" name="marraige">Married<input type="radio" name="marraige"></td>
+            </tr>
+            <tr>
+                <th colspan="6" align="center">Education Qualifcation</th>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Education Details"></td>
+                <td>Experience</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Experience Details"></td>
+            </tr>
+            <tr>
+                <th align="center" colspan="6">Job Details</th>
+
+            </tr>
+            <tr>
+                <td>Designation</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Designation Details"></td>
+                <td>Job Location</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Enter Job Location"></td>
+            </tr>
+            <tr>
+                <td>Salary</td>
+                <td>:</td>
+                <td><input type="text" pattern="[0-9]{10}" placeholder="Enter Salary Details"></td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6" align="center"><input type="submit" value="Register"></td>
+            </tr>
+
+        </table>
+    </fieldset>
+    <hr>
+    <hr>
+
+    <table align="center">
+        <tr>
+            <td>
+                <h1 align="center">Employee</h1>
+                <h1 align="center">Registration</h1>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <form>
+                        <table cellspacing="0px" cellspacing="5px" cellpadding="5px">
+                            <tr>
+                                <td>Employee Id</td>
+                                <td>:</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Employee Name:</td>
+                                <td>:</td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Email Id:</td>
+                                <td>:</td>
+                                <td><input type="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Contact number:</td>
+                                <td>:</td>
+                                <td><input type="text" pattern="[0-9]{10}"></td>
+                            </tr>
+                            <tr>
+                                <td>Material Status:</td>
+                                <td>:</td>
+                                <td><input type="radio" name="Material Status">Married<input type="radio"
+                                        name="Material Status">Single</td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Education/Experience</legend>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>Education</td>
+                                <td>:</td>
+                                <td><textarea rows="2" cols="20"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Experience</td>
+                                <td>:</td>
+                                <td><textarea rows="2" cols="20"></textarea></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td><br>
+                <fieldset>
+                    <legend>Job Details</legend>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>Designation</td>
+                                <td>:</td>
+                                <td><textarea rows="2" cols="20"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Job Location</td>
+                                <td>:</td>
+                                <td>
+                                    <select>
+                                        <option>Rajkot</option>
+                                        <option>Surat</option>
+                                        <option>Junagadh</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Salary</td>
+                                <td>:</td>
+                                <td><input type="number"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+        <td><br>
+            <table align="center">
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="submit" value="cancel"></td>
+                </tr>
+            </table>
+        </td>
+    </table>
+    <hr>
+    <hr>
+</body>
+
+</html>

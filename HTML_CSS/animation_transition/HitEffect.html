@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid red;
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            animation: ani1 15s linear infinite;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .circle2 {
+            animation: ani2 15s linear infinite;
+            background-color: red;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        @keyframes ani1 {
+            0% {
+                top: 50%;
+                left: 0%;
+                background-color: red;
+            }
+
+            25% {
+                top: 50%;
+                left: 42%;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+
+            50% {
+                top: 0%;
+                left: 0%;
+                transform: rotate(360deg);
+                background-color: green;
+            }
+
+            75% {
+                top: 50%;
+                left: 42%;
+                transform: rotate(0deg);
+                background-color: orange;
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+                transform: rotate(360deg);
+                background-color: white;
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                top: 50%;
+                left: 0%;
+                background-color: red;
+            }
+
+            25% {
+                top: 50%;
+                left: 42%;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+
+            50% {
+                top: 100%;
+                left: 0%;
+                transform: rotate(360deg);
+                background-color: green;
+            }
+
+            75% {
+                top: 50%;
+                left: 42%;
+                transform: rotate(0deg);
+                background-color: orange;
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+                transform: rotate(360deg);
+                background-color: white;
+            }
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            position: absolute;
+            animation: box 15s linear infinite;
+            transition: all 3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 60px;
+        }
+
+        @keyframes box {
+            0% {
+                top: 40%;
+                left: 45%;
+                background-color: pink;
+            }
+
+            25% {
+                top: 40%;
+                left: 45%;
+                transform: rotate(0deg);
+                background-color: green;
+            }
+
+            50% {
+                top: 40%;
+                left: 90%;
+                transform: rotate(360deg);
+                background-color: orange;
+            }
+
+            75% {
+                top: 40%;
+                left: 45%;
+                transform: rotate(0deg);
+                background-color: blue;
+            }
+
+            100% {
+                top: 40%;
+                left: 100%;
+                transform: rotate(360deg);
+                background-color: grey;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle1 circle">Wil</div>
+        <div class="circle2 circle">we</div>
+        <div class="box1">WIN</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .persons {
+            display: flex;
+            width: 50%;
+            margin: 50vh auto;
+            justify-content: center;
+        }
+
+        .person {
+            height: fit-content;
+            width: 50px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column-reverse;
+            position: relative;
+            padding: 2px;
+
+        }
+
+        .img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+
+            border: 2px solid white;
+        }
+
+        .detail {
+            color: black;
+            scale: 0;
+            transition-duration: 0.2s;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: max-content;
+            padding: 10px;
+
+        }
+
+        .detail::after {
+            width: 10px;
+            height: 10px;
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: calc(50% - 5px);
+            background-color: white;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            transform: rotateZ(45deg);
+        }
+
+        .person:hover>.detail {
+
+            scale: 1;
+            animation-name: show, float;
+            animation-duration: 0.5s, 2s;
+            animation-fill-mode: forwards, forwards;
+            animation-iteration-count: 1, infinite;
+            animation-delay: 0s, 0s;
+            animation-timing-function: linear ease-in-out;
+            animation-direction: forwards, alternate;
+        }
+
+        @keyframes show {
+            25% {
+                transform: translateX(-25%) rotateZ(-45deg) scale(100%);
+            }
+
+            50% {
+                transform: translateX(-25%) rotateZ(0deg) scale(100%);
+            }
+
+            75% {
+                transform: translateX(-25%) rotateZ(45deg) scale(100%);
+            }
+
+            100% {
+                transform: translateX(-25%) rotateZ(0deg) scale(100%);
+            }
+        }
+
+        @keyframes float {
+            25% {
+                transform: translateX(-25%) translateY(-20px);
+            }
+
+            50% {
+                transform: translateX(-25%) translateY(0px);
+            }
+
+            75% {
+                transform: translateX(-25%) translateY(-20px);
+            }
+
+            100% {
+                transform: translateX(-25%) translateY(0px);
+            }
+        }
+
+        .person:nth-child(2) {
+            left: -20px
+        }
+
+        .person:nth-child(3) {
+            left: -40px
+        }
+
+        .person:nth-child(4) {
+            left: -60px
+        }
+
+        .person:nth-child(5) {
+            left: -80px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="persons">
+        <div class="person">
+            <div class="img" style="background-color: red;">
+            </div>
+            <div class="detail">
+                <h1>Mr.A</h1>
+                <p>jr. developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="img" style="background-color: blue;">
+
+            </div>
+            <div class="detail">
+                <h1>Mr.B</h1>
+                <p>sr. developer</p>
+            </div>
+        </div>
+        <div class="person">
+            <div class="img" style="background-color: green;">
+
+            </div>
+            <div class="detail">
+                <h1>Mr.C</h1>
+                <p>Intern</p>
+            </div>
+
+        </div>
+        <div class="person">
+            <div class="img" style="background-color: pink;">
+
+            </div>
+            <div class="detail">
+                <h1>Mr.D</h1>
+                <p>Intern</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            margin: 10px;
+            height: 96vh;
+            width: 97vw;
+            background-color: black;
+            position: relative;
+        }
+
+        .container1 {
+            height: 5%;
+            width: 2.5%;
+            border: none;
+            border-radius: 50%;
+            animation: ani1 15s linear infinite;
+            position: absolute;
+        }
+
+        .container2 {
+            height: 5%;
+            width: 2.5%;
+            border: none;
+            border-radius: 50%;
+            animation: ani2 15s linear infinite;
+            position: absolute;
+        }
+
+        .container3 {
+            height: 5%;
+            width: 2.5%;
+            border: none;
+            border-radius: 50%;
+            animation: ani3 15s linear infinite;
+            position: absolute;
+        }
+
+        .container4 {
+            height: 5%;
+            width: 2.5%;
+            border: none;
+            border-radius: 50%;
+            animation: ani4 15s linear infinite;
+            position: absolute;
+        }
+
+        @keyframes ani1 {
+            0% {
+                top: 50%;
+                left: 0%;
+                background-color: red;
+            }
+
+            20% {
+                top: 50%;
+                left: 100%;
+                background-color: rgb(9, 144, 247);
+            }
+
+            40% {
+                top: 0%;
+                left: 50%;
+                background-color: rgb(255, 0, 225);
+            }
+
+            60% {
+                top: 100%;
+                left: 100%;
+                background-color: rgb(3, 245, 68);
+            }
+
+            80% {
+                top: 50%;
+                left: 50%;
+                background-color: rgb(170, 0, 255);
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+            }
+        }
+
+        @keyframes ani2 {
+            0% {
+                top: 50%;
+                left: 0%;
+            }
+
+            20% {
+                top: 50%;
+                left: 100%;
+                background-color: rgb(0, 255, 170);
+            }
+
+            40% {
+                top: 100%;
+                left: 50%;
+                background-color: rgb(255, 0, 221);
+            }
+
+            60% {
+                top: 0%;
+                left: 100%;
+                background-color: rgb(191, 255, 0);
+            }
+
+            80% {
+                top: 50%;
+                left: 50%;
+                background-color: rgb(255, 0, 102);
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+                background-color: red;
+            }
+        }
+
+        @keyframes ani3 {
+            0% {
+                top: 50%;
+                left: 0%;
+            }
+
+            20% {
+                top: 50%;
+                left: 100%;
+            }
+
+            40% {
+                top: 0%;
+                left: 50%;
+                background-color: rgb(0, 255, 200);
+            }
+
+            60% {
+                top: 100%;
+                left: 0%;
+                background-color: rgb(0, 255, 55);
+            }
+
+            80% {
+                top: 50%;
+                left: 50%;
+                background-color: rgb(195, 0, 255);
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+            }
+        }
+
+        @keyframes ani4 {
+            0% {
+                top: 50%;
+                left: 0%;
+            }
+
+            20% {
+                top: 50%;
+                left: 100%;
+            }
+
+            40% {
+                top: 100%;
+                left: 50%;
+                background-color: rgb(144, 0, 255);
+            }
+
+            60% {
+                top: 0%;
+                left: 0%;
+                background-color: rgb(0, 110, 255);
+            }
+
+            80% {
+                top: 50%;
+                left: 50%;
+                background-color: rgb(255, 98, 0);
+            }
+
+            100% {
+                top: 50%;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1"></div>
+        <div class="container2"></div>
+        <div class="container3"></div>
+        <div class="container4"></div>
+    </div>
+</body>
+
+</html>
